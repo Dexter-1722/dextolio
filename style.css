@@ -1,0 +1,173 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #2e2e3f; /* Lighter soft dark */
+  color: #f0f0f0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+a {
+  color: #ffcc66;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  color: #dddddd;
+}
+
+/* Profile Image Styling */
+.profile {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #444;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+.profile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.4);
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Sections */
+section {
+  background: #3a3a4d; /* Slightly lighter than previous */
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+section:hover {
+  transform: translateY(-4px);
+}
+
+h2 {
+  color: #ffcc66;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* Skill Tags */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background-color: #ffcc66;
+  color: #2e2e3f;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Social Links */
+.social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social a {
+  background: #4b4b5f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background 0.3s;
+  color: #ffcc66;
+}
+
+.social a:hover {
+  background: #ffcc66;
+  color: #2e2e3f;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #505060;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  background: #ffcc66;
+  border: none;
+  padding: 12px;
+  color: #2e2e3f;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #f1b500;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .skills {
+    flex-direction: column;
+  }
+
+  .social {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
